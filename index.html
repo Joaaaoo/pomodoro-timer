@@ -8,14 +8,17 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
-  <div class="container">
-    <h1>Pomodoro Timer</h1>
-    <div id="timer">
+<body class="flex items-center justify-center h-screen bg-gray-100">
+  <div class="text-center">
+    <h1 class="text-4xl mb-4">Pomodoro Timer</h1>
+    <div id="timer" class="text-6xl mb-6">
       <span id="minutes">25</span>:<span id="seconds">00</span>
     </div>
-    <button id="start">Start</button>
-    <button id="reset">Reset</button>
+    <button id="start" class="bg-green-500 text-white px-4 py-2 rounded mr-2">Start</button>
+    <button id="reset" class="bg-red-500 text-white px-4 py-2 rounded">Reset</button>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      Button
+    </button>
   </div>
   <script type="module" src="./main.js"></script>
 </body>
